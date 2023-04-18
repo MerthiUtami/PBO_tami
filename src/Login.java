@@ -1,54 +1,41 @@
-package Tugas1_PBO;
-
 public class Login {
-    private String user;
-    private String pw_user;
-    private String admin;
-    private String pw_admin;
 
-    public Login() {
-        this.user = "Itha";
-        this.pw_user = "1234";
-        this.admin = "Tami";
-        this.pw_admin = "4321";
+    private String name_user,pass_user,
+            name_admin,pass_admin;
+
+    public Login(){
+        name_user = "tami";
+        pass_user = "1234";
+
+        name_admin = "mita";
+        pass_admin = "4321";
     }
 
-    public Login(String user, String pw_user, String admin, String pw_admin) {
-        this.user = user;
-        this.pw_user = pw_user;
-        this.admin = admin;
-        this.pw_admin = pw_admin;
+    //setter
+    public void setUsername_user(String username_user){
+        this.name_user = username_user;
+    }
+    public void setPassword_user(String password_user){
+        this.pass_user = password_user;
+    }
+    public void setUsername_admin(String username_admin){
+        this.name_admin = username_admin;
+    }
+    public void setPassword_admin(String password_admin){
+        this.pass_admin = password_admin;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    //getter
+    public String getUsername_user() {
+        return name_user;
     }
-
-    public void setPw_user(String pw_user) {
-        this.pw_user = pw_user;
+    public String getPassword_user() {
+        return pass_user;
     }
-
-    public void setAdmin(String admin) {
-        this.admin = admin;
+    public String getUsername_admin() {
+        return name_admin;
     }
-
-    public void setPw_admin(String pw_admin) {
-        this.pw_admin = pw_admin;
-    }
-
-    public String getUser() {
-        return this.user;
-    }
-
-    public String getPw_user() {
-        return this.pw_user;
-    }
-
-    public String getAdmin() {
-        return this.admin;
-    }
-
-    public String getPw_admin() {
-        return this.pw_admin;
+    public String getPassword_admin() {
+        return pass_admin;
     }
 }
